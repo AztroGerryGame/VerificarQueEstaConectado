@@ -1,1 +1,2 @@
 Hola a todos comenzando esta aventura !!!
+usando otro servidor para poder subir los cambios 
