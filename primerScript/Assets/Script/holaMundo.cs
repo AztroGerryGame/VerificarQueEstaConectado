@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class holaMundo : MonoBehaviour
 {
+
+    int x; // solamente se esta declarando la variable 
+
     // Start is called before the first frame update
     void Start()
     {
+        x = 0; // se esta agregando un valor 
+
         print("Mensaje en desuso");
         Debug.Log("Hola mundo desde Unity");
         Debug.LogError("Error a la hora de programar");
@@ -16,6 +21,9 @@ public class holaMundo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // se sumara un valor cada que se ejecute o casa 1s
+        x = x + 1;
+
+        Debug.Log(x); // en este caso se esta imprimiendo para poder ver el valor en consola
     }
 }
