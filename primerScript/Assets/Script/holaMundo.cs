@@ -22,8 +22,30 @@ public class holaMundo : MonoBehaviour
     void Update()
     {
         // se sumara un valor cada que se ejecute o casa 1s
-        x = x + 1;
+        //x = x + 1;
 
-        Debug.Log(x); // en este caso se esta imprimiendo para poder ver el valor en consola
+        // Debug.Log(x); // en este caso se esta imprimiendo para poder ver el valor en consola
+        Debug.Log("Hola desde Update");
+    }
+
+    // orden de las funciones 
+    private void FixedUpdate()
+    {
+        Debug.LogWarning("Hola desde Fixed Update cada 50 frames");
+    }
+
+    private void LateUpdate()
+    {
+        Debug.Log("Hola desde Late Update ");
+    }
+
+    private void OnEnable()
+    {
+        Debug.LogWarning("El objeto ha sido habilitado ");
+    }
+
+    private void OnDisable()
+    {
+        Debug.Log("El objeto ha sido inhabilitado ");
     }
 }
